@@ -1,0 +1,38 @@
+{
+  "name": "Tabs",
+  "version": "0.1.2",
+  "manifest_version": 2,
+  "description": "Inspired by OpenTabs, this extension expands on it by adding cross platform/device syncing of tabs, and it's easy on the eyes too!",
+  "homepage_url": "http://kiriaze.github.io/tabs",
+
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  },
+
+  "default_locale": "en",
+
+  "browser_action": {
+    "default_title": "Launch Tabs"
+  },
+
+  "background":{
+    "persistent": false,
+    "scripts":["src/js/background.js"]
+  },
+
+  "permissions": [
+    "bookmarks",
+    "tabs",
+    "contextMenus",
+    "unlimitedStorage"
+  ],
+
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "options_page": "src/options.html",
+
+  "web_accessible_resources": [ "index.html", "index.html/*" ]
+
+}
