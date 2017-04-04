@@ -4,10 +4,19 @@
 	-webkit-box-sizing: border-box;
 }
 
+html {
+	font-size: 10px;
+}
+
 body {
 	font-family: "Lato", sans-serif;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
+	font-size: 1.6rem;
+}
+
+.tab-list li {
+	margin-bottom: 1rem;
 }
